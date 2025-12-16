@@ -1,0 +1,22 @@
+/* When targeting an id as a selector, we always have to start with a hashtag(#) */
+#first-paragraph{
+    color:pink;
+}
+
+
+
+/* When targeting a class as a selector, it always has to start with a dot(.) */
+.paragraph-1{
+    color: red;
+}
+
+
+
+/* When targeting a class as a selector, it always has to start with a dot(.) */
+.paragraph-2{
+    color:cyan;
+}
+
+p{
+    color:yellow;
+}
