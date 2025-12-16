@@ -1,3 +1,6 @@
+/* Most common CSS properties */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 h1 {
     background-color: aquamarine;
@@ -18,4 +21,11 @@ div{
     /* fonts */
     font-size: 16px;
     font-weight: bolder;
+    font-family: Inter, sans-serif, Arial;
+
+    /* border properties */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: darkorchid; */
+    border: 5px solid darkorchid;
 }
