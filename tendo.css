@@ -1,0 +1,65 @@
+.title{
+    background-color: cyan;
+    position: relative;
+    height: 200px;
+    /* width: 100%;
+    bottom: 0;
+    left: 0; */
+}
+
+.paragraph{
+    font-size: 24px;
+}
+
+.parent{
+    background-color: lightgreen;
+    height: 200px;
+    position: sticky;
+    top: 0;
+}
+.child{
+    background-color: yellow;
+    position:absolute;
+    width: 64px;
+    height: 64px;
+    top: 0;
+    right: 0;
+    /* position: absolute;
+    bottom: 0;
+ */
+}
+
+/* media querries */
+
+@media (max-width: 640px){
+    .title{
+        font-size: 38px;
+        background-color: lightblue;
+    }
+
+    .paragraph{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px){
+    .title{
+        background-color: cyan;
+        font-size: 32px;
+    }
+    .paragraph{
+        font-size: 20px;
+    }
+
+}
+
+button{
+    transition: 300ms;
+}
+
+button:hover{
+    background-color: lightskyblue;
+    opacity: 30%;
+    padding: 5px;
+    border-radius: 5px;
+}
