@@ -102,7 +102,7 @@ function showQuestion(){
 
     questionText.textContent = currentQuestion.question;
 
-answersContainer.innerHTML = "";
+    answersContainer.innerHTML = "";
 
     currentQuestion.answers.forEach(answer =>{
         const button = document.createElement('button');
@@ -154,7 +154,7 @@ function selectAnswer(event){
             showResults()
         }
     }, 1000)
-    
+
 }
 
 
