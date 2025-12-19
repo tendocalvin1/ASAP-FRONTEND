@@ -115,5 +115,40 @@ header p{
 
 .filter:hover{
     color: var(--primary-color);
-    
+
+}
+
+
+.filter.active{
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 500;
+}
+
+.todos-container{
+    padding: 15px 0;
+    max-height: 300px;
+    overflow-y: auto;
+
+}
+
+
+#todos-list{
+    list-style-type: none;
+}
+
+.todo-item{
+    padding: 12px 15px;
+    display:flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.todo-item:hover{
+    background-color: var(--light);
+
+}
+
+.checkbox-container{
+    margin-right: 15px;
 }
