@@ -47,3 +47,80 @@ body{
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
+
+#quiz-screen h1{
+    color: darkorange;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+
+.quiz-header{
+    margin-bottom: 2rem;
+}
+
+#question-text{
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.quiz-info{
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8.5px;
+    margin-bottom: 20px;
+}
+
+.answer-btn{
+    background-color: #f8f0f8;
+    color: #333;
+    border: 2px solid #eadbc8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.2s ease all;
+}
+
+.answer-btn:hover{
+    border-color: #dac0ae;
+    background-color: #eadbc8;
+}
+
+
+.answer-btn.correct{
+    background-color: rgba(245, 245, 245, 0.836);
+    border-color: rgb(132, 207, 151);
+    color: green;
+}
+
+
+.answer-btn.incorrect{
+    background-color: rgb(230, 223, 219);
+    border-color: rgb(137, 42, 26);
+    color: red;
+}
+
+.progress-bar{
+    height: 10px;
+    background-color: rgba(184, 179, 179, 0.872);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+
+.progress{
+    height: 100%;
+    background-color: darkorange;
+}
