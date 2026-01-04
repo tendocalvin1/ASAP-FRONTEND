@@ -26,6 +26,33 @@
 
     <div id="sideNav">
 
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Meet Us</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <div id="menuBtn">
+        <img src="menu-icon.png" id="menu">
+    </div>
+
+    <script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-250px"){
+        sideNav.style.right = "0";
+    }else{
+        sideNav.style.right = "-250px";
+        }
+    }
+    </script>
 </body>
 </html>
