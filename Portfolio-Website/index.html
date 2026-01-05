@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio — Tendo Calvin</title>
+    <meta name="description" content="Tendo Calvin — Software engineer. Selected projects, skills, and contact information.">
+    <meta name="theme-color" content="#0f1724">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#">TendoCalvin</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Hi, I’m Tendo Calvin — I build thoughtful software.</h1>
+                    <p class="lead">Software engineer focused on user-friendly web apps and performant front-end experiences. I design and implement production-ready solutions that solve real problems.</p>
+                    <p class="hero-ctas">
+                        <a class="btn btn-primary" href="#projects">View Work</a>
+                        <a class="btn btn-outline" href="#contact">Get in Touch</a>
+                    </p>
+                </div>
+                <div class="hero-visual" aria-hidden="false">
+                    <!-- Place your professional portrait at images/profile.jpg -->
+                    <img src="mam.jpeg" alt="Tendo Calvin" class="profile-image" width="400" height="400" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-sub">A few highlights — click to view details or demos.</p>
+                <div class="projects-grid">
+                    <article class="card">
+                        <div class="card-media" role="img" aria-label="Project A screenshot"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Project A</h3>
+                            <p class="card-desc">Responsive web app with user auth and data visualization.</p>
+                            <p class="card-meta">Tech: React · Node · PostgreSQL</p>
+                            <a class="card-link" href="#">View case study</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-media" role="img" aria-label="Project B screenshot"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Project B</h3>
+                            <p class="card-desc">Mobile-first marketing site with optimized performance.</p>
+                            <p class="card-meta">Tech: HTML · CSS · JS</p>
+                            <a class="card-link" href="#">Live demo</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-media" role="img" aria-label="Project C screenshot"></div>
+                        <div class="card-body">
+                            <h3 class="card-title">Project C</h3>
+                            <p class="card-desc">Prototype for an internal tooling dashboard.</p>
+                            <p class="card-meta">Tech: Vue · Firebase</p>
+                            <a class="card-link" href="#">View repo</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <p>I’m a software engineer who focuses on making interfaces that are easy to use and fast. I enjoy working across the stack and collaborating with product teams to deliver value.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skill-list">
+                    <li>JavaScript / TypeScript</li>
+                    <li>React / Vue</li>
+                    <li>HTML &amp; CSS (responsive)</li>
+                    <li>Node.js &amp; Databases</li>
+                    <li>Version Control(Git and GitHub)</li>
+                    <li>Cloud Computing</li>
+                    <li>Containerization & Orchestration (Docker + Kubernetes)</li>
+                    <li>Python(full-stack development, AI agents & Machine Learning and Artificial Intelligence)</li>
+                    <li>Content Creation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p>If you'd like to work together, send a short message below or email <a href="mailto:you@example.com">you@example.com</a>.</p>
+                <form class="contact-form" action="#" onsubmit="return false;">
+                    <label>
+                        <span class="visually-hidden">Name</span>
+                        <input type="text" name="name" placeholder="Your name" required>
+                    </label>
+                    <label>
+                        <span class="visually-hidden">Email</span>
+                        <input type="email" name="email" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        <span class="visually-hidden">Message</span>
+                        <textarea name="message" rows="4" placeholder="Short message"></textarea>
+                    </label>
+                    <p><button class="btn btn-primary" type="submit">Send message</button></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Tendo Calvin · Built with care</p>
+            <nav>
+                <ul class="social-list">
+                    <li><a href="https://github.com/tendocalvin1">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/tendo-calvin-0293b7224">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
