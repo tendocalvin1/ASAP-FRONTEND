@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fish Pond Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>FishFarm</h2>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Ponds</a>
+      <a href="#">Feeding</a>
+      <a href="#">Water Quality</a>
+      <a href="#">Reports</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <header class="topbar">
+      <h1>Dashboard</h1>
+      <span>Today: Healthy Conditions</span>
+    </header>
+
+    <!-- SUMMARY CARDS -->
+    <section class="cards">
+      <div class="card">
+        <h3>Total Ponds</h3>
+        <p>6</p>
+      </div>
+      <div class="card">
+        <h3>Total Fish</h3>
+        <p>4,800</p>
+      </div>
+      <div class="card">
+        <h3>Average Temp</h3>
+        <p>26°C</p>
+      </div>
+      <div class="card warning">
+        <h3>Alerts</h3>
+        <p>1 Pond Needs Attention</p>
+      </div>
+    </section>
+
+    <!-- POND TABLE -->
+    <section class="section">
+      <h2>Pond Status</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Pond</th>
+            <th>Fish Count</th>
+            <th>Temperature</th>
+            <th>Water Level</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pond A</td>
+            <td>800</td>
+            <td>26°C</td>
+            <td>Normal</td>
+            <td class="ok">Healthy</td>
+          </tr>
+          <tr>
+            <td>Pond B</td>
+            <td>750</td>
+            <td>29°C</td>
+            <td>Low</td>
+            <td class="alert">Check</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

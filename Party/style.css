@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: whitesmoke;
+    color: #222;
+}
+
+.dashboard{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* sidebar */
+
+.sidebar {
+    background: #4a594a6c;
+    width: 220px;
+    color: #222;
+    padding: 2rem;
+    
+} 
+
+
+.sidebar h2{
+    margin-bottom: 3rem;
+}
+
+
+.sidebar nav a{
+    display: block;
+    text-decoration: none;
+    color: azure;
+    padding: 0.4rem 0;
+    opacity: 0.85;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover{
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* Main */
+.main{
+    display: flex;
+    padding: 2rem;
+}
+
+/* topbar */
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+
+/* cards */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    background: wheat;
+    padding: 1.5rem ;
+    border-radius: 7px;
+}
+
+.cards p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.room {
+    background: wheat;
+    padding: 1.5rem ;
+    border-radius: 7px;
+}
+
+.room p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.children {
+    background: wheat;
+    padding: 1.5rem ;
+    border-radius: 7px;
+}
+
+.children p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.day {
+    background: wheat;
+    padding: 1.5rem ;
+    border-radius: 7px;
+}
+.day p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+}
+
