@@ -1,117 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  background: #f4f6f8;
-  color: #222;
-}
-
-.dashboard {
-  display: flex;
-  min-height: 100vh;
-}
-
-/* SIDEBAR */
-.sidebar {
-  width: 220px;
-  background: #0f766e;
-  color: white;
-  padding: 1.5rem;
-}
-
-.sidebar h2 {
-  margin-bottom: 2rem;
-}
-
-.sidebar nav a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 0.6rem 0;
-  opacity: 0.85;
-}
-
-.sidebar nav a.active,
-.sidebar nav a:hover {
-  opacity: 1;
-  font-weight: bold;
-}
-
-/* MAIN */
-.main {
-  flex: 1;
-  padding: 2rem;
-}
-
-/* TOPBAR */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.card {
+.chart-container {
   background: white;
   padding: 1.5rem;
   border-radius: 6px;
+  overflow-x: auto;
 }
 
-.card p {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.card.warning {
-  border-left: 4px solid #dc2626;
-}
-
-/* TABLE */
-.section h2 {
-  margin-bottom: 1rem;
-}
-
-table {
+.line-chart {
   width: 100%;
-  border-collapse: collapse;
-  background: white;
+  height: auto;
 }
 
-th, td {
-  padding: 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid #e5e7eb;
+/* Chart styling */
+.line-chart line {
+  stroke: #9ca3af;
+  stroke-width: 1;
 }
 
-.ok {
-  color: green;
-  font-weight: bold;
+.line-chart polyline {
+  stroke: #0f766e;
 }
 
-.alert {
-  color: #dc2626;
-  font-weight: bold;
+.line-chart circle {
+  fill: #0f766e;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-
-  .main {
-    padding: 1rem;
-  }
+.line-chart text {
+  font-size: 10px;
+  fill: #374151;
 }
